@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pularLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+
+        document.write(texto);
+        pularLinha()
+    }
+
+    function sorteia(numero) {
+        var numeroPensado = Math.round(Math.random() * numero);
+        return numeroPensado
+
+    }
+
+    var chute = parseInt((prompt("Digite seu numero pensado")))
+
+
+
+    numeroPensado = sorteia(10)
+
+    if (numeroPensado == chute) {
+        mostra("Você acertou")
+
+    } else if (numeroPensado > chute) {
+        mostra("O numero pensado é maior ")
+    } else {
+        mostra("O numero pensado é menor ")
+    }
+
+
+</script>
